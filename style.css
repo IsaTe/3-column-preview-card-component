@@ -23,9 +23,33 @@ body {
     width: 350px;
     height: 70vh;
     margin: 100px 0 80px;
-    padding: 35px;
+    padding: 35px;   
     border-radius: 15px; 
 }
+
+
+@media screen and (min-width: 700px) and (max-width: 1049px) {
+ 
+    #sedans {
+        border-radius: 15px 0 0 15px;
+    }
+    #suvs {
+        border-radius: 0 15px 15px 0;
+    }
+}
+@media screen and (min-width: 1050px) {
+    #sedans {
+        border-radius: 15px 0 0 15px;
+    }
+    #suvs {
+        border-radius: 0;
+    }
+    #luxury {
+        border-radius: 0 15px 15px 0;;
+    }
+}
+    
+
 
 #sedans {
     background: hsl(31, 77%, 52%);
@@ -68,7 +92,7 @@ color:hsl(31, 77%, 52%);
 color : hsl(184, 100%, 22%);
 }
 .right {
-    hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
 }
 h2 {
     font-family: 'Big Shoulders Display', cursive; ;
